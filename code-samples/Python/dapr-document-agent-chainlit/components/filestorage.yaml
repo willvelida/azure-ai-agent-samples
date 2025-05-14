@@ -1,0 +1,14 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: upload
+spec:
+  type: bindings.azure.blobstorage
+  version: v1
+  metadata:
+  - name: accountName
+    value: wvdapragentstor
+  - name: accountKey
+    value: *********
+  - name: containerName
+    value: daprfiles
